@@ -4,7 +4,31 @@
     grid-template-columns: 1fr 2fr 1fr 1fr;
     grid-template-rows: 3fr 3fr;
     border: 1px solid;
+    grid-template-areas: 
+            "nav nav nav nav"
+            "breaking main main boy"
+            "css main main boy"
+    
+    
+    ;
 }
-div{
-   
+nav{
+    grid-area: nav;
+    border: none;
+}
+main{
+    border:0.8px solid;
+    grid-area: main;
+}
+.breaking{
+    border:0.8px solid;
+    grid-area: breaking;
+}
+.css{
+    border: 0.8px solid;
+    grid-area: css;
+}
+.boy{
+    border: 0.8px solid;
+    grid-area: boy;
 }
