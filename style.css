@@ -1,34 +1,42 @@
+body{
+    padding: 7.5px;
+    margin: 0;
+}
 .design{
-    display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 2fr 1fr 1fr;
-    grid-template-rows: 3fr 3fr;
-    border: 1px solid;
-    grid-template-areas: 
-            "nav nav nav nav"
-            "breaking main main boy"
-            "css main main boy"
-    
-    
-    ;
+    display: grid;
 }
-nav{
-    grid-area: nav;
-    border: none;
+h5{
+    text-align: center;
 }
-main{
-    border:0.8px solid;
-    grid-area: main;
+.firstcontent{
+    border:0.25px solid;
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
 }
-.breaking{
-    border:0.8px solid;
-    grid-area: breaking;
+.secondcontent{
+    border: 0.25px solid;
+    display: grid;
+    grid-template-columns: 1f4 4fr;
 }
-.css{
-    border: 0.8px solid;
-    grid-area: css;
+aside,main{
+    border: 0.25px solid;
 }
-.boy{
-    border: 0.8px solid;
-    grid-area: boy;
+.topics{
+    display: grid;
+}
+#politics{
+    background-color: burlywood;
+}
+#technology{
+    background-color: aquamarine;
+}
+#locals{
+    background-color: aqua;
+}
+#opinion{
+    background-color: blue;
+}
+#sports{
+    background-color: rebeccapurple;
 }
