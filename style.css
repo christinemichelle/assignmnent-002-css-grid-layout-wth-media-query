@@ -1,7 +1,4 @@
-body{
-    padding: 7.5px;
-    margin: 0;
-}
+
 .design{
     height: 100vh;
     display: grid;
@@ -9,21 +6,26 @@ body{
 h5{
     text-align: center;
 }
+
 .firstcontent{
     border:0.25px solid;
     display:grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    
 }
 .secondcontent{
     border: 0.25px solid;
     display: grid;
-    grid-template-columns: 1f4 4fr;
+    grid-template-columns: 1fr 4fr;
+    
+    
 }
 aside,main{
     border: 0.25px solid;
 }
 .topics{
     display: grid;
+    
 }
 #politics{
     background-color: burlywood;
@@ -40,3 +42,24 @@ aside,main{
 #sports{
     background-color: rebeccapurple;
 }
+@media (max-width:576px)
+    {
+        .design{
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.8fr 2fr 4fr 4fr 2fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                    "nav "
+                    "students"
+                    "mainbreaking"
+                    "css"
+                    "boy"
+                    "politics"
+                    "technology"
+                    "locals"
+                    "opinion"
+                    "sports"
+            
+            
+            ;
+        }
+    }
